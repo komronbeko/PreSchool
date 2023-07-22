@@ -34,7 +34,6 @@ const createExpenses = async (req, res) => {
     purchase_by,
   });
   if (error) {
-    console.log(error);
     return res.status(403).json({ error: error.message });
   }
 
