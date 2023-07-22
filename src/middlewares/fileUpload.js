@@ -13,7 +13,6 @@ const fileUpload = (req, res, next) => {
     next();
   } else {
     const image = req.body?.image;
-    console.log(req.body?.image);
     if (!image) return res.status(400).json({ message: "Image not found" });
 
     req.imageName = image;

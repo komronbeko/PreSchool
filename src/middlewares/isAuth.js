@@ -14,7 +14,6 @@ const isAuth = async (req, res, next) => {
         return res.status(403).json({ message: "Token Expired" });
       }
     }
-    console.log("dfgdfg",req.verified);
     req.verified = data;
     next();
   });
