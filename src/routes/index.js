@@ -16,6 +16,7 @@ const examList = require("./examList.route");
 const group = require("./group.route");
 const library = require("./library.route");
 const invoice = require("./invoice.route");
+const inbox = require("./inbox.route");
 
 module.exports = [
   auth,
@@ -36,4 +37,5 @@ module.exports = [
   group,
   library,
   invoice,
+  inbox
 ];
