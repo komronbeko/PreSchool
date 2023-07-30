@@ -5,8 +5,8 @@ const router = require('express').Router();
 
 router.get("/api/student", getStudents);
 router.get("/api/student/one/:id", getStudentOne);
-router.post("/api/student/create/:group_id", fileUpload, postStudent);
-router.put("/api/student/edit/:group_id/:id", fileUpload, putStudent);
+router.post("/api/student/create", fileUpload, postStudent);
+router.put("/api/student/edit/:id", fileUpload, putStudent);
 
 
 

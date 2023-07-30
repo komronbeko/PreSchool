@@ -5,8 +5,8 @@ const router = require('express').Router();
 
 router.get("/api/group", getGroup);
 router.get("/api/group/one/:id", getGroupOne);
-router.post("/api/group/create/:teacher_id/:course_id", fileUpload, postGroup);
-router.put("/api/group/edit/:id/:teacher_id/:course_id", fileUpload, putGroup);
+router.post("/api/group/create", fileUpload, postGroup);
+router.put("/api/group/edit/:id", fileUpload, putGroup);
 
 
 module.exports = router;
